@@ -24,6 +24,12 @@ Meteor.startup(() => {
 
   const user = Accounts.findUserByUsername(SEED_USERNAME);
 
+  TasksCollection.allow({
+    insert: function (userId, doc) {
+    return true;
+    }
+  });
+
   if (TasksCollection.find().count() === 0) {
     [
       'First Task',
