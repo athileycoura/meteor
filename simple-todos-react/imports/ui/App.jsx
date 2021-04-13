@@ -51,30 +51,14 @@ export const App = () => {
 
   return (
     <div className="app">
-      <header>
-        <div className="app-bar">
-          <div className="app-header">
-          <h1>
-            To Do:
-            {pendingTasksTitle}
-          </h1>
-          </div>
-        </div>
-      </header>
-
       <div className="main">
         {user ? (
           <Fragment>
             <div className="user" onClick={logout}>
-              {user.username} 🚪
+              {user.username}
             </div>
             <TaskForm />
 
-            <div className="filter">
-              <button onClick={() => setHideCompleted(!hideCompleted)}>
-                {hideCompleted ? 'Show All' : 'Hide Completed'}
-              </button>
-            </div>
 
             {isLoading && <div className="loading">loading...</div>}
 
@@ -87,6 +71,12 @@ export const App = () => {
                   onDeleteClick={deleteTask}
                 />
               ))}
+              
+            <div className="filter">
+              <button onClick={() => setHideCompleted(!hideCompleted)}>
+                {hideCompleted ? 'Show All' : 'Hide Completed'}
+              </button>
+            </div>
             </ul>
           </Fragment>
         ) : (

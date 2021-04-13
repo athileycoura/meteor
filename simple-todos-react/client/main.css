@@ -1,7 +1,6 @@
 body {
-  font-family: sans-serif;
-  background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #ffffff;
   background-attachment: fixed;
 
   position: absolute;
@@ -15,6 +14,8 @@ body {
 
   font-size: 14px;
 }
+
+
 
 button {
   font-weight: bold;
@@ -48,7 +49,7 @@ button:focus {
   flex-direction: column;
   flex-grow: 1;
   overflow: auto;
-  background: white;
+  background-color: rgb(74, 177, 190);
 }
 
 .main::-webkit-scrollbar {
@@ -79,15 +80,16 @@ header {
 
 .task-form {
   display: flex;
-  margin: 16px;
+  margin: 36px;
 }
 
 .task-form > input {
+  color: white;
+  border-radius: 10px;
   flex-grow: 1;
   box-sizing: border-box;
   padding: 10px 6px;
-  background: transparent;
-  border: 1px solid #aaa;
+  border: 1px solid rgb(255, 255, 255);
   width: 100%;
   font-size: 1em;
   margin-right: 16px;
@@ -100,7 +102,10 @@ header {
 .task-form > button {
   min-width: 100px;
   height: 95%;
-  background-color: #315481;
+  background-color:#4BB543;
+  border-radius: 10px;
+  color: white;
+
 }
 
 .tasks {
@@ -120,11 +125,16 @@ header {
 
 .tasks > li > span {
   flex-grow: 1;
+  color: white;
 }
 
 .tasks > li > button {
   justify-self: flex-end;
-  background-color: #ff3046;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: red;
 }
 
 .filter {
@@ -133,7 +143,10 @@ header {
 }
 
 .filter > button {
-  background-color: #62807e;
+  background-color: #ffffff88;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 30px;
 }
 
 .login-form {
@@ -143,6 +156,8 @@ header {
 
   justify-content: center;
   align-items: center;
+
+  background-color: rgb(74, 177, 190);
 }
 
 .login-form > div {
@@ -159,7 +174,7 @@ header {
   padding: 10px 6px;
   background: transparent;
   border: 1px solid #aaa;
-  width: 100%;
+  width: 100º%;
   font-size: 1em;
   margin-right: 16px;
   margin-top: 4px;
@@ -169,8 +184,11 @@ header {
   outline: 0;
 }
 
-.login-form > div > button {
-  background-color: #62807e;
+.login-welcome-message {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 24px;
+  color: white;
 }
 
 .user {
@@ -180,4 +198,24 @@ header {
 
   margin: 8px 16px 0;
   font-weight: bold;
+  color: white;
+}
+
+.input-field {
+  background-color: rgb(238, 237, 237);
+  border-radius: 5px;
+  padding: 10px;
+  border: 3px solid rgb(1, 141, 160);
+  margin-bottom: 10px;
+  width: 90% ;
+}
+
+.log-in {
+
+  background-color: #4BB543;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  margin-bottom: 10px;
+  width: 90% ;
 }

@@ -12,12 +12,13 @@ export const LoginForm = () => {
   };
 
   return (
+
     <form onSubmit={submit} className="login-form">
-      <h1>Welcome to your To Do App.</h1>
+      <h1 className="login-welcome-message">Your life organized!</h1>
 
-      <label htmlFor="username">Username</label>
+      <label htmlFor="username"></label>
 
-      <input
+      <input className="input-field"
         type="text"
         placeholder="Username"
         name="username"
@@ -25,9 +26,9 @@ export const LoginForm = () => {
         onChange={e => setUsername(e.target.value)}
       />
 
-      <label htmlFor="password">Password</label>
+      <label htmlFor="password"></label>
 
-      <input
+      <input className="input-field"
         type="password"
         placeholder="Password"
         name="password"
@@ -35,7 +36,8 @@ export const LoginForm = () => {
         onChange={e => setPassword(e.target.value)}
       />
 
-      <button type="submit">Log In</button>
+      <button className="log-in" type="submit">LOGIN</button>
     </form>
+
   );
 };

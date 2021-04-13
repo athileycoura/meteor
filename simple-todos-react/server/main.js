@@ -11,8 +11,8 @@ const insertTask = (taskText, user) =>
     createdAt: new Date(),
   });
 
-const SEED_USERNAME = 'meteorite';
-const SEED_PASSWORD = 'password';
+const SEED_USERNAME = 'daysktest';
+const SEED_PASSWORD = '123456';
 
 Meteor.startup(() => {
   if (!Accounts.findUserByUsername(SEED_USERNAME)) {
@@ -23,12 +23,6 @@ Meteor.startup(() => {
   }
 
   const user = Accounts.findUserByUsername(SEED_USERNAME);
-
-  TasksCollection.allow({
-    insert: function (userId, doc) {
-    return true;
-    }
-  });
 
   if (TasksCollection.find().count() === 0) {
     [
