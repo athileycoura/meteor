@@ -37,6 +37,7 @@ export const App = () => {
         sort: { createdAt: -1 },
       }
     ).fetch();
+    
     const pendingTasksCount = TasksCollection.find(pendingOnlyFilter).count();
 
     return { tasks, pendingTasksCount };

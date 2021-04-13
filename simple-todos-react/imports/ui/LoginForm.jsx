@@ -13,6 +13,8 @@ export const LoginForm = () => {
 
   return (
     <form onSubmit={submit} className="login-form">
+      <h1>Welcome to your To Do App.</h1>
+
       <label htmlFor="username">Username</label>
 
       <input
