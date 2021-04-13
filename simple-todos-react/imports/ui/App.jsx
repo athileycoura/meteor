@@ -54,7 +54,7 @@ export const App = () => {
         <div className="app-bar">
           <div className="app-header">
           <h1>
-            📝️ To Do List
+            To Do:
             {pendingTasksTitle}
           </h1>
           </div>
