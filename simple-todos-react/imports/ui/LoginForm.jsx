@@ -14,7 +14,7 @@ export const LoginForm = () => {
   return (
 
     <form onSubmit={submit} className="login-form">
-      <h1 className="login-welcome-message">Your life organized!</h1>
+      <h1 className="login-welcome-message"><img border="0" height="300" width="300" hspace="0" src="images/logo_transparent.png" alt=""/></h1>
 
       <label htmlFor="username"></label>
 

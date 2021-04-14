@@ -20,10 +20,11 @@ body {
 /* buttons */
 
 .filter > button {
-  background-color: #ffffff88;
+  background-color: #b670b488;
   border-radius: 5px;
-  width: 90%;
+  width: 100%;
   margin-top: 30px;
+  color: white;
 }
 
 .tasks > li > button {
@@ -36,19 +37,18 @@ body {
 }
 
 .task-form > button {
-  min-width: 100px;
+  min-width: 50px;
   height: 95%;
-  background-color:#4BB543;
+  background-color:#8c54a1;
   border-radius: 10px;
   color: white;
-
 }
 
 button {
   font-weight: bold;
   font-size: 1em;
   border: none;
-  color: white;
+  color: rgb(83, 83, 83);
   box-shadow: 0 3px 3px rgba(34, 25, 25, 0.4);
   padding: 5px;
   cursor: pointer;
@@ -92,7 +92,7 @@ button:focus {
   flex-direction: column;
   flex-grow: 1;
   overflow: auto;
-  background-color: rgb(74, 177, 190);
+  background-color: rgba(178,235,249,255);
 }
 
 .main::-webkit-scrollbar {
@@ -123,12 +123,12 @@ header {
 .tasks > li {
   display: flex;
   padding: 16px;
-  border-bottom: #eee solid 1px;
+  border-bottom: #8c54a1 solid 1px;
 }
 
 .tasks > li > span {
   flex-grow: 1;
-  color: white;
+  color: #8c54a1;
 }
 
 /* forms */
@@ -138,15 +138,16 @@ header {
 }
 
 .task-form > input {
-  color: white;
-  border-radius: 10px;
+  color: #8c54a1;
+  border-radius: 5px;
   flex-grow: 1;
   box-sizing: border-box;
   padding: 10px 6px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid white;
   width: 100%;
   font-size: 1em;
   margin-right: 16px;
+  background-color: rgb(238, 237, 237);
 }
 
 .task-form > input:focus {
@@ -161,7 +162,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(74, 177, 190);
+  background-color: rgba(178,235,249,255);
 }
 
 .login-form > div {
@@ -202,26 +203,24 @@ header {
 
   margin: 8px 16px 0;
   font-weight: bold;
-  color: white;
+  color: #8c54a1;
 }
 
 .input-field {
   background-color: rgb(238, 237, 237);
   border-radius: 5px;
   padding: 10px;
-  border: 3px solid rgb(1, 141, 160);
+  border: 3px solid #8c54a1;
   margin-bottom: 10px;
   width: 90% ;
 }
 
 .log-in {
-
+  color: white;
   background-color: #4BB543;
   border-radius: 5px;
   padding: 10px;
-  border: 1px solid rgb(255, 255, 255);
-  margin-bottom: 10px;
-  width: 90% ;
+  width: 90%;
 }
 
 /* filter */
